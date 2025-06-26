@@ -1,61 +1,120 @@
-/* Genel */
-html {
-  scroll-behavior: smooth;
-}
-
+/* Sayfa genel ayarları */
 body {
   margin: 0;
+  padding: 0;
+  background-color: #1e2a38;  /* Koyu mavi arka plan */
   font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
-  color: #333;
+  color: #f0f0f0; /* Genel yazı rengi */
+  text-align: center; /* Yazıları ortala */
 }
 
-/* Navbar */
+/* Navbar stilleri */
 nav {
-  background-color: #2c2c3e;
+  background-color: #2c3e50;  
   padding: 15px;
   text-align: center;
-  position: sticky;
+  position: fixed; /* Menü üstte sabit */
+  width: 100%;
   top: 0;
+  left: 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
   z-index: 1000;
 }
 
-button {
-  background-color: #ff4081;
-  color: white;
+nav a {
+  display: inline-block;
+  margin: 0 10px;
   padding: 10px 20px;
+  background-color: #34495e;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #2c3e50;
+}
+
+/* İçerik kutusu */
+section {
+  max-width: 600px;
+  margin: 100px auto 60px; /* Menü ve footer boşluğu */
+  background-color: #4a90e2; /* Açık mavi kutu */
+  color: white;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+/* Profil resmi */
+.profile-img {
+  width: 100%;
+  max-width: 500px; /* Sayfada fazla büyük olmasın */
+  height: auto; /* Yüksekliği orantılı ayarla */
+  display: block;
+  margin: 0 auto 25px auto; /* Ortala ve boşluk bırak */
+  border-radius: 10px; /* İsteğe bağlı: hafif köşe yumuşatma */
+}
+
+/* Butonlar */
+button {
+  padding: 10px 20px;
+  background-color: #34495e;
+  color: white;
   border: none;
   border-radius: 8px;
-  font-size: 16px;
   cursor: pointer;
-  margin: 5px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s;
+  margin-top: 15px;
 }
 
 button:hover {
-  background-color: #e91e63;
+  background-color: #2c3e50;
 }
 
-/* Bölümler */
-section {
-  padding: 60px 20px;
-  text-align: center;
+/* İletişim bölümü */
+.iletisim {
+  margin-top: 30px;
+  color: white;
+  font-size: 16px;
 }
 
-/* Profil Fotoğrafı */
-.profil-foto {
-  width: 200px;
-  height: 200px;
-  object-fit: contain; /* kırpmasın */
-  border-radius: 50%;
-  margin: 20px 0;
-  background-color: white;
+.iletisim a {
+  color: #bbe1fa; /* Açık mavi link */
+  text-decoration: none;
+}
+
+.iletisim a:hover {
+  text-decoration: underline;
 }
 
 /* Footer */
 footer {
-  background-color: #888888;
+  background-color: #2c3e50;
   color: white;
   text-align: center;
-  padding: 20px 0;
+  padding: 10px;
+  font-weight: bold;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
+
+.map-container {
+  margin-top: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog-yazi {
+  background-color: #4a90e2;  /* açık mavi */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 700px;
+  border-radius: 10px;
+  color: white;
+  line-height: 1.6;
+}
+

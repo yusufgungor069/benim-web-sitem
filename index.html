@@ -2,57 +2,32 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Benim Web Sitem</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yusuf Güngör - Anasayfa</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Navbar -->
   <nav>
-    <a href="#anasayfa"><button>Anasayfa</button></a>
-    <a href="#yazilarim"><button>Yazılarım</button></a>
-    <a href="#projelerim"><button>Projelerim</button></a>
+    <a href="index.html">Anasayfa</a>
+    <a href="yazilarim.html">Yazılarım</a>
+    <a href="projelerim.html">Projelerim</a>
+    <a href="hakkimda.html">Hakkımda</a>
   </nav>
-
-  <!-- Anasayfa -->
- <section id="anasayfa">
-  <h1>Benim Web Siteme Hoş Geldiniz</h1>
-  
-  <!-- Profil Fotoğrafı -->
-  <img src="ben.jpg" alt="Benim Fotoğrafım" class="profil-foto">
-
-  <!-- Tanıtım Metni -->
+<section>
+  <img src="ben.jpg" alt="Yusuf Güngör" class="profile-img" />
+  <h2>İlk Web Sitem</h2>
   <p>Merhaba ben Yusuf Güngör. Ben web geliştirmeyi öğrenen biriyim. Bu site benim ilk denemem.</p>
+  
+  <button onclick="window.open('https://www.instagram.com/yusufgungor021', '_blank')">Instagram Sayfam</button>
 
-  <!-- Instagram Butonu -->
-  <br />
-  <a href="https://www.instagram.com/yusufgungor021" target="_blank">
-    <button>Instagram Sayfam</button>
-  </a>
+  <div class="iletisim">
+    <h3>İletişim</h3>
+    <p>E-posta: <a href="mailto:y9872997@gmail.com">y9872997@gmail.com</a></p>
+  </div>
 </section>
-
-  <!-- Yazılarım -->
-  <section id="yazilarim">
-    <h2>Yazılarım</h2>
-    <p>Bu bölümde yazdığım yazıları paylaşacağım.</p>
-  </section>
-
-  <!-- Projelerim -->
-  <section id="projelerim">
-    <h2>Projelerim</h2>
-    <p>Buraya yaptığım projeleri ekleyeceğim.</p>
-  </section>
-
-  <!-- İletişim -->
-  <section id="iletisim" style="text-align:center; padding: 20px;">
-    <p>İletişim: <a href="mailto:y9872997@gmail.com">y9872997@gmail.com</a></p>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>2025</p>
-  </footer>
+ 
+  <footer>2025</footer>
 
 </body>
 </html>
